@@ -1,0 +1,42 @@
+﻿@model Agenda.Models.Centro
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Centro</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subdirector)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subdirector)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Coordinador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Coordinador)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CentroId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
